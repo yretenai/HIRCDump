@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIRCDump", "HIRCDump\HIRCDump.csproj", "{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
