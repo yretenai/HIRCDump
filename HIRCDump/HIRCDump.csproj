@@ -1,9 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-
+    
+    <ItemGroup>
+        <Using Include="HierarchySoundbank" />
+        <Using Include="HierarchySoundbank.Chunks" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\HierarchySoundbank\HierarchySoundbank.csproj" />
+    </ItemGroup>
+    
 </Project>
