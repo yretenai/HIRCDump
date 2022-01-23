@@ -1,0 +1,26 @@
+﻿namespace HierarchySoundbank;
+
+public enum HierarchyType : byte {
+    State = 0x01,
+    Sound = 0x02,
+    Action = 0x03,
+    Event = 0x04,
+    RandomContainer = 0x05,
+    SwitchContainer = 0x06,
+    ActorMixer = 0x07,
+    AudioBus = 0x08,
+    LayerContainer = 0x09,
+    MusicSegment = 0x0A,
+    MusicTrack = 0x0B,
+    MusicSwitch = 0x0C,
+    MusicContainer = 0x0D,
+    Attenuation = 0x0E,
+    DialogueEvent = 0x0F,
+    FXShareSet = 0x10,
+    FXCustom = 0x11,
+    AuxiliaryBus = 0x12,
+    LFO = 0x13,
+    Envelope = 0x14,
+    AudioDevice = 0x15,
+    TimeMod = 0x16,
+}

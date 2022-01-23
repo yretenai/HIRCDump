@@ -1,4 +1,6 @@
-﻿namespace HIRCDump;
+﻿using System;
+
+namespace HierarchySoundbank;
 
 public record Data : IChunk {
     public Data(ReadOnlySpan<byte> buffer) => Buffer = buffer.ToArray();

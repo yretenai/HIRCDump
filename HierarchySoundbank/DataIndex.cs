@@ -1,6 +1,8 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-namespace HIRCDump;
+namespace HierarchySoundbank;
 
 public record DataIndex : IChunk {
     public DataIndex(ReadOnlySpan<byte> data) {

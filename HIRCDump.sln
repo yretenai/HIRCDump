@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIRCDump", "HIRCDump\HIRCDump.csproj", "{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchySoundbank", "HierarchySoundbank\HierarchySoundbank.csproj", "{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIRCDump", "HIRCDump\HIRCDump.csproj", "{4C5E00C2-DA9F-4B8D-B16E-63ADC4DC4F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54CDDEB0-F7D1-4906-BFBD-4F82EEE9C37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5E00C2-DA9F-4B8D-B16E-63ADC4DC4F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5E00C2-DA9F-4B8D-B16E-63ADC4DC4F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5E00C2-DA9F-4B8D-B16E-63ADC4DC4F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5E00C2-DA9F-4B8D-B16E-63ADC4DC4F9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

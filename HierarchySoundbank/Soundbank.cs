@@ -1,20 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Runtime.InteropServices;
 
-namespace HIRCDump;
+namespace HierarchySoundbank;
 
 public record Soundbank {
-    public enum ChunkId : uint {
-        BKHD = 0x44484B42, // BankHeader
-        DATA = 0x44415441, // Data
-        DIDX = 0x44494458, // Data Index
-        FXPR = 0x46585052, // Effects Processor
-        ENVS = 0x454E5653, // Environments
-        HIRC = 0x48495243, // Hierarchy
-        STMG = 0x53544D47, // Sound Type Manager Groups
-        STID = 0x53544944, // Sound Type IDs
-    }
-
     public Soundbank(Stream stream) {
         Span<uint> headerBuffer = stackalloc uint[4];
         stream.Read(MemoryMarshal.AsBytes(headerBuffer));
@@ -47,7 +39,7 @@ public record Soundbank {
                     case ChunkId.HIRC: {
                         var chunkBuffer = new Span<byte>(new byte[chunkHeaderBuffer[0].Size]);
                         stream.Read(chunkBuffer);
-                        Chunks[chunkHeaderBuffer[0].Id] = new Hierarchy(chunkBuffer);
+                        Chunks[chunkHeaderBuffer[0].Id] = new Hierarchy(chunkBuffer, Version);
                         break;
                     }
                     default:
